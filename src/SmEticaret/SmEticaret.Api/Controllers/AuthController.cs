@@ -50,7 +50,7 @@ namespace SmEticaret.Api.Controllers
 				return NotFound();
 			}
 
-			var token = GetJwt(user);
+			var token = CreateToken(user);
 
 			return Ok(new
 			{
@@ -58,7 +58,7 @@ namespace SmEticaret.Api.Controllers
 			});
 		}
 
-		private string GetJwt(UserEntity user)
+		private string CreateToken(UserEntity user)
 		{
 			var claims = new List<Claim>
 			{
