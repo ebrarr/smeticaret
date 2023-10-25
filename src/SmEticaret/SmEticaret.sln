@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmEticaret.Mvc", "SmEticare
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmEticaret.Data", "SmEticaret.Data\SmEticaret.Data.csproj", "{27F1CC63-B3F5-4B44-9438-CCF744328BD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmEticaret.Api", "SmEticaret.Api\SmEticaret.Api.csproj", "{A24F2DEB-3B09-48CD-A54E-7F3D674FBEF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{27F1CC63-B3F5-4B44-9438-CCF744328BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F1CC63-B3F5-4B44-9438-CCF744328BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F1CC63-B3F5-4B44-9438-CCF744328BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24F2DEB-3B09-48CD-A54E-7F3D674FBEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24F2DEB-3B09-48CD-A54E-7F3D674FBEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24F2DEB-3B09-48CD-A54E-7F3D674FBEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24F2DEB-3B09-48CD-A54E-7F3D674FBEF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
