@@ -50,21 +50,20 @@ namespace SmEticaret.Api.Services.TokenService
 
 			return ServiceResult.Success(token);
 
+		}
+		private string GetAudienceFromConfiguration()
+		{
+			return _configuration["Jwt:Audience"];
+		}
 
+		private string GetIssuerFromConfiguration()
+		{
+			return _configuration["Jwt:Issuer"];
+		}
 
-			private string GetAudienceFromConfiguration()
-			{
-				return _configuration["Jwt:Audience"];
-			}
-
-			private string GetIssuerFromConfiguration()
-			{
-				return _configuration["Jwt:Issuer"];
-			}
-
-			private string GetSecretKeyFromConfiguration()
-			{
-				return _configuration["Jwt:SecretKey"];
-			}
+		private string GetSecretKeyFromConfiguration()
+		{
+			return _configuration["Jwt:SecretKey"];
 		}
 	}
+}

@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using SmEticaret.Api.Models;
 using SmEticaret.Api.Services.TokenService;
 using SmEticaret.Data;
 using SmEticaret.Data.Entities;
+using SmEticaret.Models.Dto;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -30,7 +30,7 @@ namespace SmEticaret.Api.Controllers
 		}
 
 		[HttpPost("login")]
-		public IActionResult Login([FromBody] LoginModel loginModel)
+		public IActionResult Login([FromBody] LoginDto loginModel)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -67,7 +67,7 @@ namespace SmEticaret.Api.Controllers
 		}
 
 		[HttpPost("register")]
-		public async Task<IActionResult> Register([FromBody] RegisterModel registerModel)
+		public async Task<IActionResult> Register([FromBody] RegisterDto registerModel)
 		{
 			if (!ModelState.IsValid)
 			{

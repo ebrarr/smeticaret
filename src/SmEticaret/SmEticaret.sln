@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmEticaret.Api", "SmEticare
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmEticaret.Shared", "SmEticaret.Shared\SmEticaret.Shared.csproj", "{C13ED18C-12BC-4C3D-BC48-BFE9D41ED53C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmEticaret.Models", "SmEticaret.Models\SmEticaret.Models.csproj", "{1ECB07C6-8D97-4E70-8358-483C34FB79EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C13ED18C-12BC-4C3D-BC48-BFE9D41ED53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13ED18C-12BC-4C3D-BC48-BFE9D41ED53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13ED18C-12BC-4C3D-BC48-BFE9D41ED53C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECB07C6-8D97-4E70-8358-483C34FB79EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECB07C6-8D97-4E70-8358-483C34FB79EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECB07C6-8D97-4E70-8358-483C34FB79EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECB07C6-8D97-4E70-8358-483C34FB79EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

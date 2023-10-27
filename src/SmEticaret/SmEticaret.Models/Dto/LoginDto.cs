@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SmEticaret.Api.Models
+namespace SmEticaret.Models.Dto
 {
-	public class LoginModel
+	public class LoginDto
 	{
 		[Required, MinLength(1), EmailAddress]
 		public string Email { get; set; }
