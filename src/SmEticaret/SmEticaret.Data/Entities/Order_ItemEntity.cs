@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -21,10 +23,24 @@ namespace SmEticaret.Data.Entities
 
 		//nav prop
 
-		[ForeignKey(nameof(OrderId))]
 		public OrderEntity Order { get; set; }
 
-		[ForeignKey(nameof(ProductId))]
 		public ProductEntity Product { get; set; }
 	}
+
+    public class Order_ItemEntityConfiguraton : IEntityTypeConfiguration<Order_ItemEntity>
+    {
+        public void Configure(EntityTypeBuilder<Order_ItemEntity> builder)
+        {
+            builder.HasOne(c => c.Order)
+                .WithMany(x => x.OrderItems)
+                .HasForeignKey(c => c.OrderId)
+                .OnDelete(DeleteBehavior.ClientCascade);
+
+            builder.HasOne(c => c.Product)
+                .WithMany(x => x.OrderItems)
+                .HasForeignKey(c => c.OrderId)
+                .OnDelete(DeleteBehavior.ClientCascade);
+        }
+    }
 }
